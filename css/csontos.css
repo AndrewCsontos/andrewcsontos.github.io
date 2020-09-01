@@ -1,0 +1,81 @@
+BODY
+{
+    FONT-SIZE: 10pt;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: palegoldenrod
+}
+.heading1
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 14pt;
+    FONT-FAMILY: Arial
+}
+.basic
+{
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Arial
+}
+.basic A
+{
+    COLOR: red
+}
+.heading2
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    FONT-FAMILY: Arial
+}
+.heading3
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt
+}
+TD
+{
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: Arial
+}
+.caption
+{
+    FONT-SIZE: 8pt
+}
+.todoevent
+{
+    FONT-SIZE: 9pt;
+    COLOR: black;
+    FONT-FAMILY: 'Microsoft Sans Serif', Arial;
+    BACKGROUND-COLOR: #d5dcdc;
+    TEXT-ALIGN: left
+}
+.todoeventhead
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Arial, 'Lucida Sans Unicode';
+    BACKGROUND-COLOR: white;
+    TEXT-ALIGN: left
+}
+.todoevent A
+{
+    COLOR: black
+}
+.back1
+{
+    BACKGROUND-IMAGE: url(/images/bluefunk.gif)
+}
+.todoevent A:hover
+{
+    COLOR: red
+}
+UL
+{
+    MARGIN-TOP: 0px;
+    MARGIN-BOTTOM: 0px
+}
+.small
+{
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Arial
+}

@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+	<title>Credits</title>
+	<style type="text/css">
+
+		/* http://meyerweb.com/eric/tools/css/reset/
+	   v2.0 | 20110126
+	   License: none (public domain)
+	*/
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed,
+	figure, figcaption, footer, header, hgroup,
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+	  margin: 0;
+	  padding: 0;
+	  border: 0;
+	  font-size: 100%;
+	  font: inherit;
+	  vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure,
+	footer, header, hgroup, menu, nav, section {
+	  display: block;
+	}
+	body {
+	  line-height: 1;
+	}
+	ol, ul {
+	  list-style: none;
+	}
+	blockquote, q {
+	  quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+	  content: '';
+	  content: none;
+	}
+	table {
+	  border-collapse: collapse;
+	  border-spacing: 0;
+	}
+	*, *:before, *:after {
+	  -moz-box-sizing: border-box; box-sizing: border-box; box-sizing: border-box;
+	}
+
+	html, body {
+	  height: 100%;
+	  background: #333;
+	}
+	.credits {
+	  text-decoration: none;
+	  font: normal 8px "C64 User Mono";
+	  color: #777;
+	  position: absolute;
+	  right: 1em;
+	  bottom: 1em;
+	}
+	.credits:hover {
+	  color: #aaa;
+	}
+
+	/**
+	 * Fonts
+	 */
+	@font-face {
+	   font-family: "C64 User Mono";
+	   src: url("./fonts/C64_User_Mono_v1.0-STYLE.eot");
+	   src: url("./fonts/C64_User_Mono_v1.0-STYLE.eot?#iefix") format("embedded-opentype"),
+			url("./fonts/C64_User_Mono_v1.0-STYLE.woff") format("woff"),
+			url("./fonts/C64_User_Mono_v1.0-STYLE.ttf") format("truetype");
+	  font-weight: normal;
+	  font-style: normal;
+	}
+	@font-face {
+	  font-family: "Giana";
+	  src: url("./fonts/giana.eot");
+	  src: url("./fonts/giana.eot?#iefix") format("embedded-opentype"),
+		   url("./fonts/giana.woff") format("woff"),
+		   url("./fonts/giana.ttf") format("truetype");
+	  font-weight: normal;
+	  font-style: normal;
+	}
+
+	/**
+	 * The blue C64 screen
+	 */
+	.spacebar,
+	section {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  width: 640px;
+	  height: 400px;
+
+	  margin-top: -200px;
+	  margin-left: -320px;
+
+	  color: #6076c5;
+	  font: normal 16px "C64 User Mono";
+	  text-transform: uppercase;
+
+	  z-index: 1;
+	}
+	/* Border of the sceen */
+	section:before {
+	  position: absolute;
+	  left: -64px;
+	  right: -64px;
+	  top: -74px;
+	  bottom: -74px;
+	  content: "";
+	  background: #6076c5;
+	  z-index: -1;
+	}
+	/* Inside screen */
+	section:after {
+	  position: absolute;
+	  left: 0;
+	  right: 0;
+	  top: 0;
+	  bottom: 0;
+	  content: "";
+	  background: #20398d;
+	  z-index: -1;
+	}
+
+	/**
+	 * Blue screen animations
+	 */
+	@keyframes cursor {
+	  0% {
+		background: #20398d;
+	  }
+	  50% {
+		background: #6076c5;
+	  }
+	}
+	@keyframes line_one {
+	  from {
+		height: auto;
+		text-indent: 0;
+	  }
+	  to {
+		height: auto;
+		width: 18em; /* Number of chars + one for cursor */
+		text-indent: 0;
+	  }
+	}
+	@keyframes line_two {
+	  to {
+		width: 100%;
+		height: 100%;
+	  }
+	}
+	@keyframes line_three {
+	  from {
+		height: 100%;
+		text-indent: 0;
+	  }
+	  to {
+		height: 100%;
+		width: 4em; /* Number of chars + one for cursor */
+		text-indent: 0;
+	  }
+	}
+	@keyframes decrunch {
+	  /* Firefox and IE10 won't animate linear-gradients, so we fall back to full border color change */
+	  20% {
+		background: #b8b8b8;
+		background-image: linear-gradient(to bottom, #ffffff 5%,#000000 5%,#000000 10%,#b8b8b8 10%,#b8b8b8 16%,#5090d0 16%,#5090d0 23%,#98ff98 23%,#98ff98 28%,#808080 28%,#808080 33%,#484848 33%,#484848 40%,#c87870 40%,#c87870 46%,#472b1b 46%,#472b1b 51%,#a04800 51%,#a04800 57%,#f0e858 57%,#f0e858 62%,#181090 62%,#181090 69%,#50b818 69%,#50b818 78%,#a838a0 78%,#a838a0 86%,#68d0a8 86%,#68d0a8 95%,#882000 95%);
+	  }
+	  40% {
+		background: #484848;
+		background-image: linear-gradient(to bottom, #882000 10%,#68d0a8 10%,#68d0a8 12%,#a838a0 12%,#a838a0 18%,#50b818 18%,#50b818 27%,#181090 27%,#181090 38%,#f0e858 38%,#f0e858 41%,#a04800 41%,#a04800 56%,#472b1b 56%,#472b1b 61%,#c87870 61%,#c87870 66%,#484848 66%,#484848 68%,#808080 68%,#808080 75%,#98ff98 75%,#98ff98 77%,#5090d0 77%,#5090d0 92%,#b8b8b8 92%,#b8b8b8 94%,#000000 94%,#000000 97%,#ffffff 97%);
+	  }
+	  60% {
+		background: #c87870;
+		background-image: linear-gradient(to bottom, #ffffff 5%,#c87870 5%,#c87870 14%,#484848 14%,#484848 22%,#808080 22%,#808080 31%,#98ff98 31%,#98ff98 38%,#5090d0 38%,#5090d0 43%,#b8b8b8 43%,#b8b8b8 49%,#000000 49%,#000000 54%,#68d0a8 54%,#68d0a8 60%,#a838a0 60%,#a838a0 67%,#50b818 67%,#50b818 72%,#181090 72%,#181090 77%,#f0e858 77%,#f0e858 84%,#a04800 84%,#a04800 90%,#472b1b 90%,#472b1b 95%,#882000 95%);
+	  }
+	  80% {
+		background: #68d0a8;
+		background-image: linear-gradient(to bottom, #882000 5%,#68d0a8 5%,#68d0a8 14%,#a838a0 14%,#a838a0 22%,#50b818 22%,#50b818 31%,#181090 31%,#181090 38%,#f0e858 38%,#f0e858 43%,#a04800 43%,#a04800 49%,#472b1b 49%,#472b1b 54%,#c87870 54%,#c87870 60%,#484848 60%,#484848 67%,#808080 67%,#808080 72%,#98ff98 72%,#98ff98 77%,#5090d0 77%,#5090d0 84%,#b8b8b8 84%,#b8b8b8 90%,#000000 90%,#000000 95%,#ffffff 95%);
+	  }
+	  100% {
+		background: #50b818;
+		background-image: linear-gradient(to bottom, #ffffff 3%,#000000 3%,#000000 6%,#b8b8b8 6%,#b8b8b8 8%,#5090d0 8%,#5090d0 23%,#98ff98 23%,#98ff98 25%,#808080 25%,#808080 32%,#484848 32%,#484848 34%,#c87870 34%,#c87870 39%,#472b1b 39%,#472b1b 44%,#a04800 44%,#a04800 59%,#f0e858 59%,#f0e858 62%,#181090 62%,#181090 73%,#50b818 73%,#50b818 82%,#a838a0 82%,#a838a0 88%,#68d0a8 88%,#68d0a8 90%,#882000 90%);
+	  }
+	}
+
+	/**
+	 * All the typing stuff on the blue screen
+	 */
+	.loading {
+	  line-height: 1;
+	}
+	.loading li {
+	  padding-right: 1em;
+	  width: 0;
+	  height: 0;
+	  overflow: hidden;
+	  display: inline-block;
+	  position: relative;
+	  float: left;
+	  clear: left;
+	}
+	.loading li:first-child {
+	  height: auto;
+	  width: auto;
+	}
+	.loading li:before {
+	  white-space: pre;
+	}
+	.spacebar:before,
+	.loading li:first-child:before {
+
+	  content: "\0a     **** commodore 64 basic v2 ****\
+		\0a\0a  64k ram system  38911 basic bytes free\
+		\0a\0aready.";
+
+	}
+	.loading li:nth-child(2):before {
+	  content: "\6c\6f\61\64\22\4f\75\74\74\61\73\6b\22\2c\38\2c\31";
+	}
+	.loading li:nth-child(3):before {
+	  content: "\0a \53\65\61\72\63\68\69\6e\67\20\66\6f\72\20\6f\75\74\74\61\73\6b\2e\2e\2e \0a \53\65\61\72\63\68\69\6e\67\20\66\6f\72\20\43\6f\6e\63\75\72\2e\2e\2e\0a \53\65\61\72\63\68\69\6e\67\20\66\6f\72\20\73\61\70\2e\2e\2e \0a \6c\6f\61\64\69\6e\67";
+	}
+	.loading li:nth-child(4):before {
+	  content: "ready.";
+	}
+	.loading li:nth-child(5):before {
+	  content: "run";
+	}
+	.loading li:nth-child(2) {
+	  width: 1em;
+	  height: auto;
+	  text-indent: 1em;
+	  animation-name: line_one;
+	  animation-delay: 2s;
+	  animation-duration: 3s;
+	  animation-iteration-count: 1;
+	  animation-timing-function: steps(22);
+	  animation-fill-mode: forwards;
+	}
+	.loading li:nth-child(2):after {
+	  width: 1em;
+	  height: 1em;
+	  background: rgba(0,0,0,0);
+	  content: "";
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  animation-name: cursor;
+	  animation-duration: 1s;
+	  animation-iteration-count: 7; /* must be even, so we end on invisible cursor */
+	  animation-timing-function: steps(1);
+	  animation-fill-mode: forwards;
+	}
+	.loading li:nth-child(3) {
+	  animation-delay: 7s;
+	  animation-duration: 1s;
+	  animation-name: line_two;
+	  animation-iteration-count: 1;
+	  animation-timing-function: steps(1, start);
+	  animation-fill-mode: forwards;
+	}
+	.loading li:nth-child(4) {
+	  animation-delay: 11s;
+	  animation-duration: 1s;
+	  animation-name: line_two;
+	  animation-iteration-count: 1;
+	  animation-timing-function: steps(1, start);
+	  animation-fill-mode: forwards;
+	}
+	.loading li:nth-child(5) {
+	  width: 1em;
+	  height: auto;
+	  text-indent: 1em;
+	  animation-delay: 12s;
+	  animation-duration: 1s;
+	  animation-name: line_three;
+	  animation-iteration-count: 1;
+	  animation-timing-function: steps(3, start);
+	  animation-fill-mode: forwards;
+	}
+	.loading li:nth-child(5):after {
+	  width: 1em;
+	  height: 1em;
+	  background: rgba(0,0,0,0);
+	  content: "";
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  animation-name: cursor;
+	  animation-duration: 1s;
+	  animation-delay: 10.5s;
+	  animation-iteration-count: 3; /* must be even, so we end on invisible cursor */
+	  animation-timing-function: steps(1);
+	  animation-fill-mode: forwards;
+	}
+
+	/**
+	 * Decrunching
+	 */
+	section.bluescreen:before {
+	  animation-name: decrunch;
+	  animation-delay: 15s;
+	  animation-duration: 0.25s;
+	  animation-iteration-count: 14;
+	  animation-timing-function: steps(1);
+	}
+
+	/**
+	 * Intro screen animations
+	 */
+	@keyframes startintro {
+	  to {
+		visibility: visible;
+	  }
+	}
+	@keyframes logoswing {
+	  50% {
+		left: -162px;
+	  }
+	}
+	@keyframes rasterswing {
+	  50% {
+		top: 168px;
+	  }
+	}
+	@keyframes rasterindex {
+	  50% {
+		z-index: 10;
+	  }
+	}
+	@keyframes textflash {
+	  0% { color: #000000; }
+	  1% { color: #20398d; }
+	  2% { color: #6076c5; }
+	  3% { color: #86bec5; }
+	  4% { color: #ffffff; }
+	  5% { color: #86bec5; }
+	  6% { color: #6076c5; }
+	  7% { color: #20398d; }
+	  8% { color: #000000; }
+	  26% { color: #873b31; }
+	  27% { color: #ba7369; }
+	  28% { color: #dce78c; }
+	  29% { color: #ffffff; }
+	  30% { color: #dce78c; }
+	  31% { color: #ba7369; }
+	  32% { color: #873b31; }
+	  33% { color: #000000; }
+	  51% { color: #555555; }
+	  52% { color: #808080; }
+	  53% { color: #ababab; }
+	  54% { color: #ffffff; }
+	  55% { color: #ababab; }
+	  56% { color: #808080; }
+	  57% { color: #555555; }
+	  58% { color: #000000; }
+	  76% { color: #625000; }
+	  77% { color: #74ab54; }
+	  78% { color: #b7eb9b; }
+	  79% { color: #ffffff; }
+	  80% { color: #b7eb9b; }
+	  81% { color: #74ab54; }
+	  82% { color: #625000; }
+	  83% { color: #000000; }
+	}
+	@keyframes starscroll {
+	  to {
+		left: -40em;
+	  }
+	}
+	@keyframes scroller {
+	  to {
+		text-indent: -790em; /*todo Should match text length */
+	  }
+	}
+	@keyframes scrollerbounce {
+	  from, to  {
+		animation-timing-function: ease-out;
+	  }
+	  50% {
+		line-height: 1em;
+		animation-timing-function: ease-in;
+	  }
+	}
+
+	/**
+	 * The intro screem
+	 */
+	section.introscreen {
+	  animation-name: startintro;
+	  animation-delay: 19s; /* Blue screen animation takes 19s */
+	  animation-fill-mode: forwards;
+	  animation-duration: 1s; /* Doesn't matter */
+
+	  visibility: hidden;
+	  background: #000;
+	  border-color: #000;
+
+	  font: normal 16px "Giana";
+	  text-transform: uppercase;
+
+	}
+	section.introscreen:before,
+	section.introscreen:after {
+	  background: #000;
+	}
+
+	/**
+	 * The swinging logo
+	 */
+	div.logo {
+	  position: absolute;
+	  top: 64px;
+	  left: 0;
+	  right: 0;
+	  text-align: center;
+	  margin: 0 auto;
+	  height: 96px;
+	  color: #6076c5;
+	  overflow: hidden;
+	}
+	div.logo:before {
+	  content: url('data:image/png;base64,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'); /*todo*/
+	  position: absolute;
+	  left: 40px;
+
+	  animation-name: logoswing;
+	  animation-duration: 3s;
+	  animation-iteration-count: infinite;
+	  animation-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	  animation-fill-mode: forwards;
+
+	  z-index: 9;
+	}
+
+	/**
+	 * The swinging raster bar
+	 */
+	section.introscreen:after {
+	  height: 100px;
+	  left: -64px;
+	  right: -64px;
+	  z-index: 8;
+	  position: absolute;
+
+	  animation-name: rasterswing, rasterindex;
+	  animation-duration: 4s, 4s;
+	  animation-iteration-count: infinite, infinite;
+	  animation-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000), steps(1);
+	  animation-fill-mode: forwards;
+
+	  background: linear-gradient(to bottom, #873b31 0%,#000000 2%,#873b31 2%,#873b31 4%,#873b31 4%,#873b31 6%,#ba7369 6%,#ba7369 8%,#873b31 8%,#873b31 10%,#ba7369 10%,#ba7369 12%,#ba7369 12%,#ba7369 14%,#dce78c 14%,#dce78c 16%,#ba7369 16%,#ba7369 18%,#dce78c 18%,#dce78c 20%,#dce78c 20%,#dce78c 22%,#ffffff 22%,#ffffff 24%,#dce78c 24%,#dce78c 26%,#ffffff 26%,#ffffff 28%,#ffffff 28%,#ffffff 30%,#dce78c 30%,#dce78c 32%,#ffffff 32%,#ffffff 34%,#dce78c 34%,#dce78c 36%,#dce78c 36%,#dce78c 38%,#ba7369 38%,#ba7369 40%,#dce78c 40%,#dce78c 42%,#ba7369 42%,#ba7369 44%,#ba7369 44%,#ba7369 46%,#873b31 46%,#873b31 48%,#ba7369 48%,#ba7369 50%,#873b31 50%,#873b31 52%,#873b31 52%,#873b31 54%,#000000 54%,#000000 56%,#873b31 56%,#873b31 58%,rgba(0,0,0,0) 58%,rgba(0,0,0,0) 100%);
+	}
+
+	/**
+	 * Credits block
+	 */
+	ul.presents {
+	  z-index: 10;
+	  color: #000000;
+	  position: absolute;
+	  top: 228px;
+	  left: -64px;
+	  right: -64px;
+	  text-align: center;
+	  padding: 34px 0; /* Making it 100px high */
+
+	  background: linear-gradient(to bottom, #20398d 0%,#000000 2%,#20398d 2%,#20398d 4%,#20398d 4%,#20398d 6%,#6076c5 6%,#6076c5 8%,#20398d 8%,#20398d 10%,#6076c5 10%,#6076c5 12%,#6076c5 12%,#6076c5 14%,#86bec5 14%,#86bec5 16%,#6076c5 16%,#6076c5 18%,#86bec5 18%,#86bec5 20%,#86bec5 20%,#86bec5 22%,#ffffff 22%,#ffffff 24%,#86bec5 24%,#86bec5 26%,#ffffff 26%,#ffffff 74%,#86bec5 74%,#86bec5 76%,#ffffff 76%,#ffffff 78%,#86bec5 78%,#86bec5 80%,#86bec5 80%,#86bec5 82%,#6076c5 82%,#6076c5 84%,#86bec5 84%,#86bec5 86%,#6076c5 86%,#6076c5 88%,#6076c5 88%,#6076c5 90%,#20398d 90%,#20398d 92%,#6076c5 92%,#6076c5 94%,#20398d 94%,#20398d 96%,#20398d 96%,#20398d 98%,#000000 98%,#000000 100%); /* W3C */
+	}
+	ul.presents li:first-child:before {
+	  content: "\43\72\65\64\69\74\73";
+	  animation-name: textflash;
+	  animation-duration: 10s;
+	  animation-iteration-count: infinite;
+	  animation-timing-function: steps(1);
+	}
+	ul.presents li:last-child:before {
+	  content: "\54\68\69\73\20\73\69\74\65\20\68\61\73\20\62\65\65\6e\20\62\72\6f\75\67\68\74\20\74\6f\20\79\6f\75\20\62\79\3a";
+	  animation-name: textflash;
+	  animation-duration: 10s;
+	  animation-delay: 0.5s;
+	  animation-iteration-count: infinite;
+	  animation-timing-function: steps(1);
+	}
+
+	/**
+	 * Flashing startfield behind the scrolltext
+	 */
+	.starfield {
+	  position: relative;
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  overflow: hidden;
+	  height: 4em;
+	  width: 40em;
+	}
+	.starfield li {
+	  position: relative;
+	  display: inline;
+	  left: 0;
+	}
+	.starfield li:before {
+	  content: ".";
+	}
+	/* Create an exact copy of each star */
+	.starfield li:after {
+	  content: ".";
+	  position: absolute;
+	  top: 0;
+	  left: 40em;
+	}
+	.starfield li {
+	  animation-name: starscroll;
+	  animation-duration: 5s;
+	  animation-timing-function: linear;
+	  animation-iteration-count: infinite;
+	  animation-fill-mode: forwards;
+	}
+	.starfield li:before,
+	.starfield li:after {
+	  animation-name: textflash;
+	  animation-iteration-count: infinite;
+	  animation-timing-function: steps(1);
+	  animation-duration: 6.5s;
+	  padding-left: 3em;
+	}
+	.starfield li:nth-child(2n):before,
+	.starfield li:nth-child(2n):after {
+	  padding-left: 4em;
+	}
+	.starfield li:nth-child(3n):before,
+	.starfield li:nth-child(3n):after {
+	  padding-left: 7em;
+	}
+	.starfield li:nth-child(4n):before,
+	.starfield li:nth-child(4n):after {
+	  padding-left: 2em;}
+
+	/* Flash each star at a different time */
+	.starfield li:nth-child(1):before,
+	.starfield li:nth-child(1):after {
+	  animation-delay: -1s;
+	}
+	.starfield li:nth-child(2):before,
+	.starfield li:nth-child(2):after {
+	  animation-delay: -1.5s;
+	}
+	.starfield li:nth-child(3):before,
+	.starfield li:nth-child(3):after {
+	  animation-delay: -2s;
+	}
+	.starfield li:nth-child(4):before,
+	.starfield li:nth-child(4):after {
+	  animation-delay: -2.5s;
+	}
+	.starfield li:nth-child(5):before,
+	.starfield li:nth-child(5):after {
+	  animation-delay: -3s;
+	}
+	.starfield li:nth-child(6):before,
+	.starfield li:nth-child(6):after {
+	  animation-delay: -3.5s;
+	}
+	.starfield li:nth-child(7):before,
+	.starfield li:nth-child(7):after {
+	  animation-delay: -4s;
+	}
+	.starfield li:nth-child(8):before,
+	.starfield li:nth-child(8):after {
+	  animation-delay: -4.5s;
+	}
+	.starfield li:nth-child(9):before,
+	.starfield li:nth-child(9):after {
+	  animation-delay: -5s;
+	}
+	.starfield li:nth-child(10):before,
+	.starfield li:nth-child(10):after {
+	  animation-delay: -5.5s;
+	}
+	.starfield li:nth-child(11):before,
+	.starfield li:nth-child(11):after {
+	  animation-delay: -6s;
+	}
+	.starfield li:nth-child(12):before,
+	.starfield li:nth-child(12):after {
+	  animation-delay: -6.5s;
+	}
+	.starfield li:nth-child(13):before,
+	.starfield li:nth-child(13):after {
+	  animation-delay: -7s;
+	}
+	.starfield li:nth-child(14):before,
+	.starfield li:nth-child(14):after {
+	  animation-delay: -7.5s;
+	}
+	.starfield li:nth-child(15):before,
+	.starfield li:nth-child(15):after {
+	  animation-delay: -8s;
+	}
+	.starfield li:nth-child(16):before,
+	.starfield li:nth-child(16):after {
+	  animation-delay: -8.5s;
+	}
+	.starfield li:nth-child(17):before,
+	.starfield li:nth-child(17):after {
+	  animation-delay: -9s;
+	}
+	.starfield li:nth-child(18):before,
+	.starfield li:nth-child(18):after {
+	  animation-delay: -9.5s;
+	}
+	.starfield li:nth-child(19):before,
+	.starfield li:nth-child(19):after {
+	  animation-delay: -10s;
+	}
+	.starfield li:nth-child(20):before,
+	.starfield li:nth-child(20):after {
+	  animation-delay: -10.5s;
+	}
+	.starfield li:nth-child(21):before,
+	.starfield li:nth-child(21):after {
+	  animation-delay: -11s;
+	}
+
+	/**
+	 * And finally the meat of a C64 cracktro... the scrolltext
+	 */
+	p.scrolltext {
+	  /* Bounce-animation needs to be separate from the scroll animation, otherwise the
+		 change in timing-functions will be applied to both animations */
+	  line-height: 7em;
+
+	  animation-name: scrollerbounce;
+	  animation-delay: 24s; /* Blue screen animation takes 19s, wait another second */
+	  animation-duration: 2s;
+	  animation-iteration-count: infinite;
+	}
+	p.scrolltext:before {
+	  content: "...\54\68\65\20\4f\75\74\74\61\73\6b\20\55\49\20\54\65\61\6d\20\28\42\72\65\74\20\48\61\72\72\69\73\2c\20\42\72\75\63\65\20\45\6c\6c\69\6f\74\74\2c\20\4a\6f\65\20\57\61\68\6c\65\72\2c\20\4a\6f\68\6e\20\4c\75\65\6b\65\72\29\2e\20 \
+		\54\68\65\20\4d\61\6e\68\61\74\74\61\6e\20\55\49\20\74\65\61\6d\20\28\42\68\61\67\61\76\61\6e\20\4a\61\6c\6c\69\2c\20\42\6f\6f\6e\54\68\61\69\20\48\6f\2c\20\4a\65\61\6e\6e\69\6e\65\20\41\72\6d\73\74\72\6f\6e\67\2c\20\56\61\6c\65\72\79\20\47\6f\72\6f\64\6e\69\74\63\68\65\76\29\2e  \
+		\54\68\65\20\48\6f\6f\76\69\6c\6c\65\20\55\49\20\74\65\61\6d\20\28\42\72\65\74\20\48\61\72\72\69\73\2c\20\4a\6f\65\20\57\61\68\6c\65\72\29\2e\20 \
+		\54\68\65\20\47\61\74\65\77\61\79\20\55\49\20\74\65\61\6d\20\28\42\72\61\64\20\55\6c\6c\6d\61\6e\2c\20\47\72\65\67\20\53\6d\69\74\68\2c\20\4a\65\61\6e\6e\69\6e\65\20\41\72\6d\73\74\72\6f\6e\67\2c\20\56\61\6c\65\72\79\20\47\6f\72\6f\64\6e\69\74\63\68\65\76\2c\20\59\6f\75\73\73\65\66\20\54\61\67\68\6c\61\62\69\29\2e  \
+		\54\68\65\20\4e\55\49\20\55\49\20\74\65\61\6d\20\28\42\72\61\64\20\55\6c\6c\6d\61\6e\2c\20\44\61\72\69\6e\20\57\61\72\6c\69\6e\67\2c\20\47\72\65\67\20\53\6d\69\74\68\2c\20\48\69\63\68\61\6d\20\45\6c\20\48\61\6d\6d\6f\75\63\68\69\2c\20\4a\65\61\6e\6e\69\6e\65\20\41\72\6d\73\74\72\6f\6e\67\2c\20\4a\65\66\66\20\48\61\6e\64\6c\65\79\2c\20\56\61\6c\65\72\79\20\47\6f\72\6f\64\6e\69\74\63\68\65\76\2c\20\57\65\69\74\65\6e\67\20\48\75\61\6e\67\2c\20\59\6f\75\73\73\65\66\20\54\61\67\68\6c\61\62\69\29\2e  \
+		\54\68\65\20\41\72\63\68\69\74\65\63\74\75\72\65\20\74\65\61\6d\20\28\41\6d\6f\6c\20\4b\61\73\62\65\6b\61\72\2c\20\42\72\69\61\6e\20\57\68\69\74\65\2c\20\4d\69\6b\65\20\4c\6f\72\65\2c\20\56\69\6b\74\6f\72\20\53\74\6f\6c\62\6f\76\6f\79\2c\20\56\6f\6a\74\61\20\4a\61\6b\75\62\65\63\29\2e  \
+		\53\70\65\63\69\61\6c\20\54\68\61\6e\6b\73\20\74\6f\20\54\6f\6d\20\44\65\70\61\73\71\75\61\6c\65\2c\20\52\61\6a\20\53\69\6e\67\68\2c\20\4d\69\6b\65\20\48\69\6c\74\6f\6e\2c\20\53\74\65\76\65\20\53\69\6e\67\68\2c\20\4a\6f\68\6e\20\4c\6f\76\65\2c\20\4d\69\6b\65\20\4c\6f\72\65\2c\20\46\72\65\64\20\46\72\65\64\65\72\69\63\6b\73\2c\20\42\72\75\63\65\20\45\6c\6c\69\6f\74\74\2c\20\41\6e\64\72\65\77\20\43\73\6f\6e\74\6f\73\2c\20\43\6f\6e\63\75\72\2c\20\4f\75\74\74\61\73\6b\2c\20\56\69\6e\6e\65\74\2c\20\74\68\65\20\43\6f\6d\6d\6f\64\6f\72\65\20\36\34\20\61\6e\64\20\4d\69\63\72\6f\73\6f\66\74\20\43\6c\61\73\73\69\63\20\41\53\50\2e\20  \
+		  ----- ";
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  width: 40em;
+	  overflow: hidden;
+	  white-space: nowrap;
+	  text-indent: 40em;
+	  height: 60px;
+	  color: #fff;
+
+	  animation-name: scroller;
+	  animation-delay: 24s; /* Blue screen animation takes 19s, wait another second */
+	  animation-duration: 40s;
+	  animation-iteration-count: infinite;
+	  animation-timing-function: linear;
+	}
+
+	/**
+	 * Act like a real C64 once space bar has been pressed
+	 */
+	.spacebar:valid + section li + li {
+	  display: none;
+	}
+	.spacebar:valid + section,
+	.spacebar:valid + section:before,
+	.spacebar:valid + section + section {
+	  animation-name: none;
+	}
+	.spacebar:valid + section + section {
+	  /* This selector doesn't work in Chrome, although it's valid :( */
+	  visibility: hidden;
+	}
+	.spacebar {
+	  background: transparent;
+	  outline: none;
+	  padding: 0;
+	  border: none;
+	  resize: none;
+	}
+	.spacebar:valid {
+	  z-index: 20;
+	  margin-top: -104px;
+	  text-indent: -1em; /* Hide that first space */
+	  height: 19em;
+	  overflow: hidden;
+	}
+
+	</style>
+	<script type="text/javascript">
+
+/**
+ * http://leaverou.github.io/prefixfree/
+ * StyleFix 1.0.3 & PrefixFree 1.0.7
+ * @author Lea Verou
+ * MIT license
+ */
+		(function () {
+			function k(a, b) { return [].slice.call((b || document).querySelectorAll(a)) } if (window.addEventListener) {
+				var e = window.StyleFix = {
+					link: function (a) {
+						try { if ("stylesheet" !== a.rel || a.hasAttribute("data-noprefix")) return } catch (b) { return } var c = a.href || a.getAttribute("data-href"), d = c.replace(/[^\/]+$/, ""), h = (/^[a-z]{3,10}:/.exec(d) || [""])[0], l = (/^[a-z]{3,10}:\/\/[^\/]+/.exec(d) || [""])[0], g = /^([^?]*)\??/.exec(c)[1], m = a.parentNode, f = new XMLHttpRequest, n; f.onreadystatechange = function () {
+							4 === f.readyState &&
+							n()
+						}; n = function () {
+							var b = f.responseText; if (b && a.parentNode && (!f.status || 400 > f.status || 600 < f.status)) {
+								b = e.fix(b, !0, a); if (d) var b = b.replace(/url\(\s*?((?:"|')?)(.+?)\1\s*?\)/gi, function (b, a, c) { return /^([a-z]{3,10}:|#)/i.test(c) ? b : /^\/\//.test(c) ? 'url("' + h + c + '")' : /^\//.test(c) ? 'url("' + l + c + '")' : /^\?/.test(c) ? 'url("' + g + c + '")' : 'url("' + d + c + '")' }), c = d.replace(/([\\\^\$*+[\]?{}.=!:(|)])/g, "\\$1"), b = b.replace(RegExp("\\b(behavior:\\s*?url\\('?\"?)" + c, "gi"), "$1"); c = document.createElement("style"); c.textContent =
+								b; c.media = a.media; c.disabled = a.disabled; c.setAttribute("data-href", a.getAttribute("href")); m.insertBefore(c, a); m.removeChild(a); c.media = a.media
+							}
+						}; try { f.open("GET", c), f.send(null) } catch (p) { "undefined" != typeof XDomainRequest && (f = new XDomainRequest, f.onerror = f.onprogress = function () { }, f.onload = n, f.open("GET", c), f.send(null)) } a.setAttribute("data-inprogress", "")
+					}, styleElement: function (a) { if (!a.hasAttribute("data-noprefix")) { var b = a.disabled; a.textContent = e.fix(a.textContent, !0, a); a.disabled = b } }, styleAttribute: function (a) {
+						var b =
+						a.getAttribute("style"), b = e.fix(b, !1, a); a.setAttribute("style", b)
+					}, process: function () { k('link[rel="stylesheet"]:not([data-inprogress])').forEach(StyleFix.link); k("style").forEach(StyleFix.styleElement); k("[style]").forEach(StyleFix.styleAttribute) }, register: function (a, b) { (e.fixers = e.fixers || []).splice(void 0 === b ? e.fixers.length : b, 0, a) }, fix: function (a, b, c) { for (var d = 0; d < e.fixers.length; d++) a = e.fixers[d](a, b, c) || a; return a }, camelCase: function (a) {
+						return a.replace(/-([a-z])/g, function (b, a) { return a.toUpperCase() }).replace("-",
+						"")
+					}, deCamelCase: function (a) { return a.replace(/[A-Z]/g, function (b) { return "-" + b.toLowerCase() }) }
+				}; (function () { setTimeout(function () { k('link[rel="stylesheet"]').forEach(StyleFix.link) }, 10); document.addEventListener("DOMContentLoaded", StyleFix.process, !1) })()
+			}
+		})();
+		(function (k) {
+			function e(b, c, d, h, l) { b = a[b]; b.length && (b = RegExp(c + "(" + b.join("|") + ")" + d, "gi"), l = l.replace(b, h)); return l } if (window.StyleFix && window.getComputedStyle) {
+				var a = window.PrefixFree = {
+					prefixCSS: function (b, c, d) {
+						var h = a.prefix; -1 < a.functions.indexOf("linear-gradient") && (b = b.replace(/(\s|:|,)(repeating-)?linear-gradient\(\s*(-?\d*\.?\d*)deg/ig, function (b, a, c, d) { return a + (c || "") + "linear-gradient(" + (90 - d) + "deg" })); b = e("functions", "(\\s|:|,)", "\\s*\\(", "$1" + h + "$2(", b); b = e("keywords", "(\\s|:)", "(\\s|;|\\}|$)",
+						"$1" + h + "$2$3", b); b = e("properties", "(^|\\{|\\s|;)", "\\s*:", "$1" + h + "$2:", b); if (a.properties.length) { var l = RegExp("\\b(" + a.properties.join("|") + ")(?!:)", "gi"); b = e("valueProperties", "\\b", ":(.+?);", function (a) { return a.replace(l, h + "$1") }, b) } c && (b = e("selectors", "", "\\b", a.prefixSelector, b), b = e("atrules", "@", "\\b", "@" + h + "$1", b)); b = b.replace(RegExp("-" + h, "g"), "-"); return b = b.replace(/-\*-(?=[a-z]+)/gi, a.prefix)
+					}, property: function (b) { return (0 <= a.properties.indexOf(b) ? a.prefix : "") + b }, value: function (b, c) {
+						b =
+						e("functions", "(^|\\s|,)", "\\s*\\(", "$1" + a.prefix + "$2(", b); b = e("keywords", "(^|\\s)", "(\\s|$)", "$1" + a.prefix + "$2$3", b); 0 <= a.valueProperties.indexOf(c) && (b = e("properties", "(^|\\s|,)", "($|\\s|,)", "$1" + a.prefix + "$2$3", b)); return b
+					}, prefixSelector: function (b) { return b.replace(/^:{1,2}/, function (b) { return b + a.prefix }) }, prefixProperty: function (b, c) { var d = a.prefix + b; return c ? StyleFix.camelCase(d) : d }
+				}; (function () {
+					var b = {}, c = [], d = getComputedStyle(document.documentElement, null), h = document.createElement("div").style,
+					l = function (a) { if ("-" === a.charAt(0)) { c.push(a); a = a.split("-"); var d = a[1]; for (b[d] = ++b[d] || 1; 3 < a.length;) a.pop(), d = a.join("-"), StyleFix.camelCase(d) in h && -1 === c.indexOf(d) && c.push(d) } }; if (0 < d.length) for (var g = 0; g < d.length; g++) l(d[g]); else for (var e in d) l(StyleFix.deCamelCase(e)); var g = 0, f, k; for (k in b) d = b[k], g < d && (f = k, g = d); a.prefix = "-" + f + "-"; a.Prefix = StyleFix.camelCase(a.prefix); a.properties = []; for (g = 0; g < c.length; g++) e = c[g], 0 === e.indexOf(a.prefix) && (f = e.slice(a.prefix.length), StyleFix.camelCase(f) in
+					h || a.properties.push(f)); !("Ms" != a.Prefix || "transform" in h || "MsTransform" in h) && "msTransform" in h && a.properties.push("transform", "transform-origin"); a.properties.sort()
+				})(); (function () {
+					function b(a, b) { h[b] = ""; h[b] = a; return !!h[b] } var c = { "linear-gradient": { property: "backgroundImage", params: "red, teal" }, calc: { property: "width", params: "1px + 5%" }, element: { property: "backgroundImage", params: "#foo" }, "cross-fade": { property: "backgroundImage", params: "url(a.png), url(b.png), 50%" } }; c["repeating-linear-gradient"] =
+					c["repeating-radial-gradient"] = c["radial-gradient"] = c["linear-gradient"]; var d = { initial: "color", "zoom-in": "cursor", "zoom-out": "cursor", box: "display", flexbox: "display", "inline-flexbox": "display", flex: "display", "inline-flex": "display", grid: "display", "inline-grid": "display", "max-content": "width", "min-content": "width", "fit-content": "width", "fill-available": "width" }; a.functions = []; a.keywords = []; var h = document.createElement("div").style, e; for (e in c) {
+						var g = c[e], k = g.property, g = e + "(" + g.params + ")"; !b(g, k) &&
+						b(a.prefix + g, k) && a.functions.push(e)
+					} for (var f in d) k = d[f], !b(f, k) && b(a.prefix + f, k) && a.keywords.push(f)
+				})(); (function () {
+					function b(a) { e.textContent = a + "{}"; return !!e.sheet.cssRules.length } var c = { ":read-only": null, ":read-write": null, ":any-link": null, "::selection": null }, d = { keyframes: "name", viewport: null, document: 'regexp(".")' }; a.selectors = []; a.atrules = []; var e = k.appendChild(document.createElement("style")), l; for (l in c) { var g = l + (c[l] ? "(" + c[l] + ")" : ""); !b(g) && b(a.prefixSelector(g)) && a.selectors.push(l) } for (var m in d) g =
+					m + " " + (d[m] || ""), !b("@" + g) && b("@" + a.prefix + g) && a.atrules.push(m); k.removeChild(e)
+				})(); a.valueProperties = ["transition", "transition-property"]; k.className += " " + a.prefix; StyleFix.register(a.prefixCSS)
+			}
+		})(document.documentElement);
+
+
+	</script>
+</head>
+<body>
+
+  <textarea class="spacebar" required autofocus spellcheck="false"></textarea>
+
+  <section class="bluescreen">
+	<ul class="loading">
+	  <li>
+	  <li>
+	  <li>
+	  <li>
+	  <li>
+	</ul>
+  </section>
+
+  <section class="introscreen">
+	<div class="logo"></div>
+	<ul class="presents">
+	  <li>
+	  <li>
+	</ul>
+	<ul class="starfield">
+	  <li>
+	  <li>
+	  <li>
+	  <li>
+	  <li>
+	  <li><br>
+	  <li>
+	  <li>
+	  <li>
+	  <li>
+	  <li>
+	  <li><br>
+	  <li>
+	  <li>
+	  <li>
+	  <li>
+	  <li>
+	  <li><br>
+	</ul>
+	<p class="scrolltext"></p>
+  </section>
+
+  <a href="http://bit.ly/1Me8yMw" class="credits" target="_blank">Credits</a>
+
+</body>
+</html>
