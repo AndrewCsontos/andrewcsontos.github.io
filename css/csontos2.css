@@ -94,9 +94,6 @@ page width. Or, you can specify an exact pixel width. */
 .page_tc, .page_mc, .page_bc {width:auto;}
 .page_mc {min-height:1000px;}
 
-/* FOR IE6 */
-* html .page_mr {background-image: url(/images/shadow_right.gif);}
-* html .page_ml {background-image: url(/images/shadow_left.gif);}
 
 #header
 {
