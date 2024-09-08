@@ -21189,7 +21189,7 @@
           coverImageCell.innerHTML = org.hasCoverImage
             ? `<img src="${imageUrl}" alt="${org.name}" width="150px">`
             : "no image";
-          nameCell.innerHTML = org.name;
+          nameCell.innerHTML = `<a href="https://virginia.presence.io/organization/${org.uri}" target="_blank">${org.name}</a>`;
           memberCountCell.innerHTML = org.memberCount;
           categoriesCell.innerHTML = org.categories.join(", ");
         });
