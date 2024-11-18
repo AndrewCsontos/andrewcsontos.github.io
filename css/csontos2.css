@@ -89,10 +89,10 @@ page width. Or, you can specify an exact pixel width. */
 	background-color:White;
 }
 
-.page_tl, .page_ml, .page_bl {padding-left: 23px; background:white url(/images/shadow_left.png) repeat-y scroll left top;}
-.page_tr, .page_mr, .page_br {padding-right:23px; background:white url(/images/shadow_right.png) repeat-y scroll right top;}
+.page_tl, .page_ml, .page_bl {padding-left: 23px; background:white url(../images/shadow_left.png) repeat-y scroll left top;}
+.page_tr, .page_mr, .page_br {padding-right:23px; background:white url(../images/shadow_right.png) repeat-y scroll right top;}
 .page_tc, .page_mc, .page_bc {width:auto;}
-.page_mc {min-height:1000px;}
+.page_ml, .page_mr, .page_mc {height:100%;}
 
 
 #header
@@ -182,14 +182,14 @@ input[type="password"]
 
 table.neat
 {
-  border: solid 1px #e8eef4;
+  border: solid 0px #e8eef4;
   border-collapse: collapse;
 }
 
 table.neat td 
 {
   padding: 5px;   
-  border: solid 1px #e8eef4;
+  border: solid 0px #e8eef4;
 }
 
 table.neat th
@@ -197,7 +197,7 @@ table.neat th
   padding: 6px 5px;
   text-align: left;
   background-color: #e8eef4; 
-  border: solid 1px #e8eef4;   
+  border: solid 0px #e8eef4;   
 }
 
 /* MISC  
